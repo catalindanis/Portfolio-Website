@@ -17,7 +17,7 @@ body{
     border: solid 1px black;
 }
 
-.header .text .name,
+.header .text #name,
 .header .text .description{
     border: solid 1px white;
 }
@@ -30,7 +30,7 @@ body{
     color: #f5f3f5;
     text-align: center;
     font-size: 80px;
-    font-family: fira-code;
+    font-family: montserrat-regular;
 }
 
 .header .text .description{
@@ -38,7 +38,7 @@ body{
 }
 
 .header .text .description span{
-    color: #efecca;
+    color: #f5f3f5;
     text-align: center;
     font-size: 20px;
     font-family: open-sans;
@@ -83,11 +83,32 @@ body{
 }
 
 @font-face {
+    font-family: league-spartan;
+    src: url(/Resources/Fonts/LeagueSpartan-Bold.otf);
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url(/Resources/Fonts/Montserrat-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: montserrat-thin;
+    src: url(/Resources/Fonts/Montserrat-Thin.otf);
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url(/Resources/Fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
     font-family: open-sans;
-    src: url(/Resources/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(/Resources/Fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 @font-face {
     font-family: fira-code;
-    src: url(/Resources/FiraCode-VF.ttf);
+    src: url(/Resources/Fonts/FiraCode-VF.ttf);
 }
