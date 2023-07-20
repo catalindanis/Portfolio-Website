@@ -14,48 +14,54 @@ body{
 
 .header{
     display: flex;
-    border: solid 1px black;
+    align-items: center;
 }
 
-.header .text #name,
-.header .text .description{
-    border: solid 1px white;
-}
-
-.header .text .name{
-    width: 750px;
+.header .text{
+    width: 800px;
 }
 
 .header .text .name span{
     color: #f5f3f5;
-    text-align: center;
-    font-size: 80px;
+    font-size: 120px;
     font-family: montserrat-regular;
 }
 
 .header .text .description{
-    width: 750px;
+    margin-top: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .header .text .description span{
     color: #f5f3f5;
-    text-align: center;
     font-size: 20px;
     font-family: open-sans;
 }
 
 .header .navigation-bar{
-    border: solid 1px white;
     display: flex;
     width: fit-content;
-    position: absolute;
-    right: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header .navigation-bar div{
+    width: 250px;
+    height: 75px;
+    border-radius: 25px;
     background-color: #576ca8;
     margin: 10px;
     padding: 10px;
+    text-align: center;
+}
+
+.header .navigation-bar div span{
+    line-height: 75px; 
+    vertical-align: middle;
+    font-family: montserrat-regular;
+    font-size: 20px;
 }
 
 .sections{
