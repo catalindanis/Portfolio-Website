@@ -13,30 +13,21 @@ body{
 }
 
 .header{
-    display: flex;
-    align-items: center;
 }
 
 .header .text{
-    width: 800px;
+    width: fit-content;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header .text #name span{
     color: #FDFAF3;
+    
     font-size: 120px;
     font-family: montserrat-regular;
-}
-
-.header .text .description{
-    margin-top: 10px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.header .text .description span{
-    color: #FDFAF3;
-    font-size: 20px;
-    font-family: open-sans;
 }
 
 .header .navigation-bar{
