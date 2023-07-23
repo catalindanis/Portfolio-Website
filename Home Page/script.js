@@ -1,6 +1,6 @@
 window.addEventListener('load', function () {
     init();
-    this.window.setInterval(nameAnimate,100);
+    //this.window.setInterval(nameAnimate,100);
 });
 
 let divName;

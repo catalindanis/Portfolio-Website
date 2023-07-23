@@ -12,9 +12,6 @@ body{
     background-color: #332123;
 }
 
-.header{
-}
-
 .header .text{
     width: fit-content;
     margin-top: 100px;
@@ -25,7 +22,7 @@ body{
 
 .header .text #name span{
     color: #FDFAF3;
-    font-size: 120px;
+    font-size: 5.6vw;
     font-family: fira-code;
     pointer-events: none;
 }
@@ -84,7 +81,6 @@ body{
 
 
 /* ANIMATIONS */
-
 .header .navigation-bar div:hover{
     /* animation: button_move_up 0.2s ease 0s; */
     transform: translateY(-5px);
@@ -92,23 +88,6 @@ body{
     background-color: #978b6e;
 }
 
-@keyframes button_move_up{
-    0%{
-        transform: translateY(-1px);
-    }
-    25%{
-        transform: translateY(-2px);
-    }
-    50%{
-        transform: translateY(-3px);
-    }
-    75%{
-        transform: translateY(-4px);
-    }
-    100%{
-        transform: translateY(-5px);
-    }
-}
 
 /* FONTS */
 @font-face {
@@ -145,4 +124,30 @@ body{
 @font-face {
     font-family: fira-code;
     src: url(/Resources/Fonts/FiraCode-VF.ttf);
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1600px){
+    .header .navigation-bar div{
+        width: 230px;
+        height: 70px;
+    }
+    
+    .header .navigation-bar div span{
+        line-height: 70px; 
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1420px){
+    .header .navigation-bar div{
+        width: 210px;
+        height: 65px;
+    }
+    
+    .header .navigation-bar div span{
+        line-height: 65px; 
+        font-size: 18px;
+    }
 }
