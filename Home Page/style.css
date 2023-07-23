@@ -18,7 +18,7 @@ body{
 .header .text{
     width: fit-content;
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -26,7 +26,7 @@ body{
 .header .text #name span{
     color: #FDFAF3;
     font-size: 120px;
-    font-family: montserrat-regular;
+    font-family: fira-code;
     pointer-events: none;
 }
 
@@ -111,6 +111,11 @@ body{
 }
 
 /* FONTS */
+@font-face {
+    font-family: anonymous;
+    src: url(/Resources/Fonts/Anonymous\ Pro.ttf);
+}
+
 @font-face {
     font-family: league-spartan;
     src: url(/Resources/Fonts/LeagueSpartan-Bold.otf);

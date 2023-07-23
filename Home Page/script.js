@@ -5,11 +5,12 @@ window.addEventListener('load', function () {
 
 let divName;
 let spanName;
-let fullName = "Danis Catalin";
+let fullName;
 
 function init(){
     divName = document.getElementById("name");
     spanName = divName.getElementsByTagName("span")[0];   
+    fullName = spanName.textContent;
 }
 
 //deleting and rewriting the name from the header
@@ -34,7 +35,7 @@ function nameAnimate(){
         }
 
         if(deleting){
-            if(waited < 9){
+            if(waited < 12){
                 waited++;
             }
             else{
