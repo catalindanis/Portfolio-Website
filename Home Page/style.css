@@ -25,9 +25,9 @@ body{
 
 .header .text #name span{
     color: #FDFAF3;
-    
     font-size: 120px;
     font-family: montserrat-regular;
+    pointer-events: none;
 }
 
 .header .navigation-bar{
@@ -46,6 +46,8 @@ body{
     margin: 10px;
     padding: 10px;
     text-align: center;
+    transform: translateY(5px);
+    transition: transform 0.2s ease-in-out 0s;
 }
 
 .header .navigation-bar div span{
@@ -53,6 +55,7 @@ body{
     vertical-align: middle;
     font-family: montserrat-regular;
     font-size: 20px;
+    pointer-events: none;
 }
 
 .sections{
@@ -79,6 +82,35 @@ body{
     height: 100px;
 }
 
+
+/* ANIMATIONS */
+
+.header .navigation-bar div:hover{
+    /* animation: button_move_up 0.2s ease 0s; */
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out 0s;
+    background-color: #978b6e;
+}
+
+@keyframes button_move_up{
+    0%{
+        transform: translateY(-1px);
+    }
+    25%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    75%{
+        transform: translateY(-4px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+/* FONTS */
 @font-face {
     font-family: league-spartan;
     src: url(/Resources/Fonts/LeagueSpartan-Bold.otf);
