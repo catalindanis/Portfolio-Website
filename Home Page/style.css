@@ -9,7 +9,7 @@ html,body{
 body{
     position: relative;
     height: 100%;
-    background-color: #1b264f;
+    background-color: #332123;
 }
 
 .header{
@@ -21,8 +21,8 @@ body{
     width: 800px;
 }
 
-.header .text .name span{
-    color: #f5f3f5;
+.header .text #name span{
+    color: #FDFAF3;
     font-size: 120px;
     font-family: montserrat-regular;
 }
@@ -34,7 +34,7 @@ body{
 }
 
 .header .text .description span{
-    color: #f5f3f5;
+    color: #FDFAF3;
     font-size: 20px;
     font-family: open-sans;
 }
@@ -51,7 +51,7 @@ body{
     width: 250px;
     height: 75px;
     border-radius: 25px;
-    background-color: #576ca8;
+    background-color: #A29676;
     margin: 10px;
     padding: 10px;
     text-align: center;
