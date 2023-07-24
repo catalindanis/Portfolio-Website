@@ -10,11 +10,11 @@
     <div class="header">
         <div class="text">
             <div id="name">
-                <span>public class Danis Catalin<br> &#123</span>
+                <span>public class Danis Catalin &#123</span>
             </div>
         </div>
         <div class="navigation-bar">
-            <div>
+            <div onClick="document.getElementById('projects').scrollIntoView();">
                 <span>Projects</span>
             </div>
             <div>
@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="sections">
-        <div class="projects">
+        <div class="projects" id="projects">
               <div id="title">
                 <span>Projects</span>
               </div>
@@ -68,6 +68,55 @@
                     </div>
                 </div>
                 <div class="card" id="card_3">
+                    <div class="icon"></div>
+                    <div class="title">
+                        <span>Java projects</span>
+                    </div>
+                    <div class="description">
+                        <span><b>Hyperskill Academy</b> applications and other projects
+                            Concepts and technologies used:<br>
+                            -<b>Git</b>, <b>Gradle</b><br>
+                            -<b>OOP</b>, <b>Design Patterns</b> , <b>Multithreading</b>, <b>Algorithms</b><br>
+                            -<b>Swing</b><br>
+                            -<b>Spring Boot</b><br>
+                            -<b>SQL</b><br>
+                            -<b>REST api's</b></span>
+                    </div>
+                    <div class="source" onclick="navigateTo('https://github.com/catalindanis/Java-Projects',true)" style="cursor:pointer;">
+                        <span>Source code</span>
+                    </div>
+                </div>
+                <div class="card" id="card_4">
+                    <div class="icon"></div>
+                    <div class="title">
+                        <span>Python projects</span>
+                    </div>
+                    <div class="description">
+                        <span>Some simple <b>python</b> projects that I made. Concepts and technologies used:<br>
+                            -<b>Tkinter</b><br>
+                            -<b>Threading</b><br>
+                            -<b>Pytube</b>
+                        </span>
+                    </div>
+                    <div class="source" onclick="navigateTo('https://github.com/catalindanis/Python-Projects',true)" style="cursor:pointer;">
+                        <span>Source code</span>
+                    </div>
+                </div>
+                <div class="card" id="card_5">
+                    <div class="icon"></div>
+                    <div class="title">
+                        <span>CyberPunk Robotics website</span>
+                    </div>
+                    <div class="description">
+                        <span>Website for the robotics team that I coordinated.
+                            Developed in: <br> -<b>HTML</b>, <br> -<b>CSS</b> <br> -<b>JavaScript</b>.
+                            </span>
+                    </div>
+                    <div class="source" onclick="navigateTo('https://github.com/catalindanis/CyberPunk-Robotics-Website',true)" style="cursor:pointer;">
+                        <span>Source code</span>
+                    </div>
+                </div>
+                <div class="card" id="card_6">
                     <div class="icon"></div>
                     <div class="title">
                         <span>Java projects</span>

@@ -1,5 +1,5 @@
 html{
-    
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -188,6 +188,26 @@ span{
 
 .sections .projects .container #card_3 .description{
     margin-top: -176px
+}
+
+.sections .projects .container #card_4 .icon{
+    background-image: url('/Resources/Icons/python.png');
+}
+
+.sections .projects .container #card_4 .description{
+    margin-top: -196px
+}
+
+.sections .projects .container #card_5 .icon{
+    background-image: url('/Resources/Icons/cyberpunk.png');
+}
+
+.sections .projects .container #card_5 .title span{
+    font-size: 40px;
+}
+
+.sections .projects .container #card_5 .description{
+    margin-top: -196px
 }
 
 /* ANIMATIONS */
