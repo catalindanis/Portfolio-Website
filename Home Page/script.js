@@ -46,3 +46,11 @@ function nameAnimate(){
         }     
 }
 
+function navigateTo(url,newTab){
+    console.log(newTab);
+    if(!newTab)
+        window.location.href=url;
+    else
+        window.open(url, "_blank");
+}
+

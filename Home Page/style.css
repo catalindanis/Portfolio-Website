@@ -1,5 +1,9 @@
 html{
-    overflow: hidden;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 html,body{
@@ -11,6 +15,10 @@ body{
     height: 100%;
     background-color: #332123;
     animation: opacity_increase 0.7s;
+}
+
+span{
+    pointer-events: none;
 }
 
 .header .text{
@@ -29,7 +37,6 @@ body{
     color: #FDFAF3;
     font-size: 5.6vw;
     font-family: fira-code;
-    pointer-events: none;
 }
 
 .header .navigation-bar{
@@ -49,7 +56,7 @@ body{
     padding: 10px;
     text-align: center;
     transform: translateY(5px);
-    transition: transform 0.2s ease-in-out 0s;
+    transition: transform 0.5s;
     animation: left_to_right 0.7s;
 }
 
@@ -58,7 +65,6 @@ body{
     vertical-align: middle;
     font-family: montserrat-regular;
     font-size: 20px;
-    pointer-events: none;
 }
 
 .sections{
@@ -69,12 +75,7 @@ body{
 .sections .experience,
 .sections .education,
 .sections .contact{
-    border: solid 1px white;
-    margin-top: 20px;
-}
-
-.sections .projects{
-
+    margin-top: 100px;
 }
 
 .sections .projects .title{
@@ -90,16 +91,100 @@ body{
     font-family: montserrat-regular;
 }
 
+.sections .projects .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: left_to_right 0.7s;
+}
+
+.sections .projects .container .card{
+    background-color: #66514A;
+    border-radius: 25px;
+    width: 500px;
+    height: 600px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    transform: translateY(5px);
+    transition: transform 0.3s ease-in-out 0s;
+}
+
+.sections .projects .container .card .icon{
+    background-size: cover;
+    background-image: url('/Resources/Icons/PasswordManager.png');
+    width: 135px;
+    height: 135px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sections .projects .container .card .title{
+    height: 120px;
+    width: 300px;
+    margin-top: 5px;
+}
+
+.sections .projects .container .card .title span{
+    font-family: montserrat-thin;
+    font-size: 60px;
+    width: fit-content;
+    color: #E6CDC4;
+}
+
+.sections .projects .container .card .description{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -100px
+}
+
+.sections .projects .container .card .description span{
+    font-family: montserrat-regular;
+    font-size: 20px;
+}
+
+.sections .projects .container .card .source{
+    width: 500px;
+    height: 100px;
+    background-color: #A29676;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: table;
+}
+
+.sections .projects .container .card .source span{
+    padding-left: -25px;
+    transition: 0.2s;
+    display: table-cell;
+    vertical-align:middle;
+    font-family: league-spartan;
+    font-size: 20px;
+}
+
 
 /* ANIMATIONS */
 .header .navigation-bar div:hover{
     transform: translateY(-5px);
-    transition: transform 0.2s ease-in-out 0s;
+    transition: transform 0.2s;
     background-color: #978b6e;
 }
 
-@keyframes identifier {
-    
+.sections .projects .container .card:hover{
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out 0s;
+}
+
+.sections .projects .container .card .source:hover span{
+    padding-left: 25px;
+    transition: 0.2s;
+    background-color: #807558;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 @keyframes opacity_increase {
@@ -125,7 +210,6 @@ body{
         transform: translateX(-100px);  
     }
 }
-
 
 /* FONTS */
 @font-face {
