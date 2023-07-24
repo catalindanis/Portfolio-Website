@@ -178,6 +178,7 @@ body{
 @media screen and (max-width: 1000px){
     .header .text{
         margin-top: 50px;
+        height: 170px;
     }
 
     .header .navigation-bar{
@@ -202,11 +203,18 @@ body{
         transition: transform 0.2s ease-in-out 0s;
         background-color: #978b6e;
     }
+    .header .text #name span{
+        font-size: 80px;
+    }
+    
 }
 
 @media screen and (max-width: 800px){
     .header .navigation-bar div span{
         line-height: 115px; 
         font-size: 32px;
+    }
+    .header .text #name span{
+        font-size: 60px;
     }
 }
