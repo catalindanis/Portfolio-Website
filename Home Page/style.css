@@ -78,14 +78,15 @@ span{
     margin-top: 100px;
 }
 
-.sections .projects .title{
+.sections .projects #title{
     width: fit-content;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    animation: left_to_right 0.7s;
 }
 
-.sections .projects .title span{
+.sections .projects #title span{
     font-size: 55px;
     color: #EBEAE6; 
     font-family: montserrat-regular;
@@ -95,7 +96,7 @@ span{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    animation: left_to_right 0.7s;
+    
 }
 
 .sections .projects .container .card{
@@ -113,7 +114,6 @@ span{
 
 .sections .projects .container .card .icon{
     background-size: cover;
-    background-image: url('/Resources/Icons/PasswordManager.png');
     width: 135px;
     height: 135px;
     border-radius: 25px;
@@ -125,6 +125,7 @@ span{
     height: 120px;
     width: 300px;
     margin-top: 5px;
+    margin-left: 30px;
 }
 
 .sections .projects .container .card .title span{
@@ -137,7 +138,6 @@ span{
 .sections .projects .container .card .description{
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: -100px
 }
 
 .sections .projects .container .card .description span{
@@ -166,6 +166,29 @@ span{
     font-size: 20px;
 }
 
+.sections .projects .container #card_1 .icon{
+    background-image: url('/Resources/Icons/PasswordManager.png');
+}
+
+.sections .projects .container #card_1 .description{
+    margin-top: -100px
+}
+
+.sections .projects .container #card_2 .icon{
+    background-image: url('/Resources/Icons/WorkoutManager.png');
+}
+
+.sections .projects .container #card_2 .description{
+    margin-top: -196px
+}
+
+.sections .projects .container #card_3 .icon{
+    background-image: url('/Resources/Icons/java.png');
+}
+
+.sections .projects .container #card_3 .description{
+    margin-top: -176px
+}
 
 /* ANIMATIONS */
 .header .navigation-bar div:hover{
