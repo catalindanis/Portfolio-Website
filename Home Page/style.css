@@ -68,7 +68,7 @@ span{
 }
 
 .sections{
-    margin: 0px;
+    margin: -10px;
 }
 
 .sections .projects,
@@ -79,11 +79,11 @@ span{
 }
 
 .sections .projects #title{
-    width: fit-content;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     animation: left_to_right 0.7s;
+    background-color: #31373D;
+    margin-bottom: 25px;
+    padding: 10px;
 }
 
 .sections .projects #title span{
@@ -140,13 +140,8 @@ span{
     margin-right: 10px;
 }
 
-.sections .projects .container .card .description span{
-    font-family: montserrat-regular;
-    font-size: 20px;
-}
-
 .sections .projects .container .card .source{
-    width: 500px;
+    width: 100%;
     height: 100px;
     background-color: #A29676;
     border-bottom-left-radius: 25px;
@@ -166,6 +161,11 @@ span{
     font-size: 20px;
 }
 
+.sections .projects .container #card_1 .description span{
+    font-family: montserrat-regular;
+    font-size: 20px;
+}
+
 .sections .projects .container #card_1 .icon{
     background-image: url('/Resources/Icons/PasswordManager.png');
 }
@@ -174,12 +174,22 @@ span{
     margin-top: -100px
 }
 
+.sections .projects .container #card_2 .description span{
+    font-family: montserrat-regular;
+    font-size: 25px;
+}
+
 .sections .projects .container #card_2 .icon{
     background-image: url('/Resources/Icons/WorkoutManager.png');
 }
 
 .sections .projects .container #card_2 .description{
-    margin-top: -196px
+    margin-top: -151px;
+}
+
+.sections .projects .container #card_3 .description span{
+    font-family: montserrat-regular;
+    font-size: 23px;
 }
 
 .sections .projects .container #card_3 .icon{
@@ -187,7 +197,12 @@ span{
 }
 
 .sections .projects .container #card_3 .description{
-    margin-top: -176px
+    margin-top: -111px;
+}
+
+.sections .projects .container #card_4 .description span{
+    font-family: montserrat-regular;
+    font-size: 30px;
 }
 
 .sections .projects .container #card_4 .icon{
@@ -195,19 +210,280 @@ span{
 }
 
 .sections .projects .container #card_4 .description{
-    margin-top: -196px
+    margin-top: -146px
+}
+
+.sections .projects .container #card_5 .description span{
+    font-family: montserrat-regular;
+    font-size: 30px;
 }
 
 .sections .projects .container #card_5 .icon{
     background-image: url('/Resources/Icons/cyberpunk.png');
 }
 
-.sections .projects .container #card_5 .title span{
-    font-size: 40px;
+.sections .projects .container #card_5 .description{
+    margin-top: -146px
 }
 
-.sections .projects .container #card_5 .description{
-    margin-top: -196px
+.sections .projects .container #card_6 .description span{
+    font-family: montserrat-regular;
+    font-size: 30px;
+}
+
+.sections .projects .container #card_6 .description a{
+    font-family: montserrat-regular;
+    font-size: 30px;
+    color: black;
+}
+
+.sections .projects .container #card_6 .icon{
+    background-image: url('/Resources/Icons/c-.png');
+}
+
+.sections .projects .container #card_6 .description{
+    margin-top: -186px;
+}
+
+.sections .projects .container #card_7 .description span{
+    font-family: montserrat-regular;
+    font-size: 27px;
+}
+
+.sections .projects .container #card_7 .icon{
+    background-image: url('/Resources/Icons/power-play.png');
+}
+
+.sections .projects .container #card_7 .description{
+    margin-top: -161px
+}
+
+.sections .projects .container #card_8 .description span{
+    font-family: montserrat-regular;
+    font-size: 27px;
+}
+
+.sections .projects .container #card_8 .icon{
+    background-image: url('/Resources/Icons/freight-frenzy.png');
+}
+
+.sections .projects .container #card_8 .description{
+    margin-top: -161px
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1600px){
+    .header .navigation-bar div{
+        width: 230px;
+        height: 70px;
+    }
+    
+    .header .navigation-bar div span{
+        line-height: 70px; 
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1420px){
+    .header .navigation-bar div{
+        width: 210px;
+        height: 65px;
+    }
+    
+    .header .navigation-bar div span{
+        line-height: 65px; 
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .header .navigation-bar div{
+        width: 190px;
+        height: 60px;
+    }
+    
+    .header .navigation-bar div span{
+        line-height: 60px; 
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .header .navigation-bar div{
+        width: 170px;
+        height: 55px;
+    }
+    
+    .header .navigation-bar div span{
+        line-height: 55px; 
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .header .text{
+        margin-top: 50px;
+        height: 170px;
+    }
+
+    .header .navigation-bar{
+        display: block;
+        width: fit-content;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header .navigation-bar div{
+        width: 75vw;
+        height: 115px;
+    }
+    
+    .header .navigation-bar div span{
+        line-height: 115px; 
+        font-size: 40px;
+    }
+    .header .navigation-bar div:hover{
+        transform: translateY(-1px);
+        transition: transform 0.2s ease-in-out 0s;
+        background-color: #978b6e;
+    }
+    .header .text #name span{
+        font-size: 80px;
+    }
+
+    .sections .projects #title{
+        padding: 20px;
+    }
+    
+    .sections .projects #title span{
+        font-size: 85px;
+        color: #EBEAE6; 
+        font-family: montserrat-regular;
+    }
+    
+    .sections .projects .container .card{
+        width: 80vw;
+        height: 900px;
+    }
+
+    .sections .projects .container .card .icon{
+        width: 235px;
+        height: 235px;
+    }
+
+    .sections .projects .container .card .title span{
+        font-size: 5.6em;
+    }  
+
+    .sections .projects .container #card_1 .description span{
+        font-size: 1.87em;
+    }
+
+    .sections .projects .container #card_1 .description{
+        margin-top: -206px
+    }
+
+    .sections .projects .container #card_2 .description span{
+        font-size: 35px;
+    }
+
+    .sections .projects .container #card_2 .description{
+        margin-top: -255px
+    }
+
+    .sections .projects .container #card_3 .description span{
+        font-size: 2.18em;
+    }
+
+    .sections .projects .container #card_3 .description{
+        margin-top: -220px
+    }
+
+    .sections .projects .container #card_4 .description span{
+        font-size: 45px;
+    }
+
+    .sections .projects .container #card_4 .description{
+        margin-top: -235px
+    }
+
+    .sections .projects .container #card_5 .description span{
+        font-size: 45px;
+    }
+
+    .sections .projects .container #card_5 .description{
+        margin-top: -302px
+    }
+
+    .sections .projects .container #card_6 .description span{
+        font-size: 45px;
+    }
+
+    .sections .projects .container #card_6 .description a{
+        font-size: 45px;
+    }
+
+    .sections .projects .container #card_6 .description{
+        margin-top: -282px
+    }
+
+    .sections .projects .container #card_7 .description span{
+        font-size: 40px;
+    }
+
+    .sections .projects .container #card_7 .description{
+        margin-top: -260px
+    }
+
+    .sections .projects .container #card_8 .description span{
+        font-size: 40px;
+    }
+
+    .sections .projects .container #card_8 .description{
+        margin-top: -260px
+    }
+
+    .sections .projects .container .card .source{
+        height: 200px;
+    }
+    
+    .sections .projects .container .card .source span{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    body{
+        display: none;
+    }
+    .sections .projects .container #card_1 .description span{
+        font-size: 28px;
+    }
+
+    .sections .projects .container #card_1 .description{
+        margin-top: -225px
+    }
+
+    .sections .projects .container #card_3 .description span{
+        font-size: 33px;
+    }
+
+    .sections .projects .container #card_3 .description{
+        margin-top: -202px
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    .header .navigation-bar div span{
+        line-height: 115px; 
+        font-size: 32px;
+    }
+    .header .text #name span{
+        font-size: 60px;
+    }
 }
 
 /* ANIMATIONS */
@@ -292,95 +568,3 @@ span{
 }
 
 
-/* RESPONSIVE */
-@media screen and (max-width: 1600px){
-    .header .navigation-bar div{
-        width: 230px;
-        height: 70px;
-    }
-    
-    .header .navigation-bar div span{
-        line-height: 70px; 
-        font-size: 19px;
-    }
-}
-
-@media screen and (max-width: 1420px){
-    .header .navigation-bar div{
-        width: 210px;
-        height: 65px;
-    }
-    
-    .header .navigation-bar div span{
-        line-height: 65px; 
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 1200px){
-    .header .navigation-bar div{
-        width: 190px;
-        height: 60px;
-    }
-    
-    .header .navigation-bar div span{
-        line-height: 60px; 
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 1100px){
-    .header .navigation-bar div{
-        width: 170px;
-        height: 55px;
-    }
-    
-    .header .navigation-bar div span{
-        line-height: 55px; 
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    .header .text{
-        margin-top: 50px;
-        height: 170px;
-    }
-
-    .header .navigation-bar{
-        display: block;
-        width: fit-content;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .header .navigation-bar div{
-        width: 75vw;
-        height: 115px;
-    }
-    
-    .header .navigation-bar div span{
-        line-height: 115px; 
-        font-size: 40px;
-    }
-    .header .navigation-bar div:hover{
-        transform: translateY(-1px);
-        transition: transform 0.2s ease-in-out 0s;
-        background-color: #978b6e;
-    }
-    .header .text #name span{
-        font-size: 80px;
-    }
-    
-}
-
-@media screen and (max-width: 800px){
-    .header .navigation-bar div span{
-        line-height: 115px; 
-        font-size: 32px;
-    }
-    .header .text #name span{
-        font-size: 60px;
-    }
-}
