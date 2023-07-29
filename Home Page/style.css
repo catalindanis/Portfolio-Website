@@ -96,7 +96,6 @@ span{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
 .sections .projects .container .card{
@@ -105,11 +104,13 @@ span{
     width: 500px;
     height: 600px;
     margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
     position: relative;
     transform: translateY(5px);
     transition: transform 0.3s ease-in-out 0s;
+}
+
+.sections .projects .container .card .header{
+    display: flex;
 }
 
 .sections .projects .container .card .icon{
@@ -138,6 +139,7 @@ span{
 .sections .projects .container .card .description{
     margin-left: 10px;
     margin-right: 10px;
+    height: 350px;
 }
 
 .sections .projects .container .card .source{
@@ -161,114 +163,82 @@ span{
     font-size: 20px;
 }
 
-.sections .projects .container #card_1 .description span{
+.sections .projects .container .card .description{
+    margin-top: 10px;
+}
+
+.sections .projects .container .card .description span,
+.sections .projects .container .card .description a{
     font-family: montserrat-regular;
-    font-size: 20px;
+}
+
+.sections .projects .container #card_1 .description span{
+    font-size: 21.18px;   
+}
+
+.sections .projects .container #card_2 .description span{
+    font-size: 27px;
+}
+
+.sections .projects .container #card_3 .description span{
+    font-size: 25px;
+}
+
+.sections .projects .container #card_4 .description span{
+    font-size: 30px;
+}
+
+.sections .projects .container #card_5 .description span{
+    font-size: 30px;
+}
+
+.sections .projects .container #card_6 .description span{ 
+    font-size: 30px;
+}
+
+.sections .projects .container #card_6 .description a{
+    font-size: 30px;
+    color: black;
+}
+
+.sections .projects .container #card_7 .description span{  
+    font-size: 27px;
+}
+
+.sections .projects .container #card_8 .description span{
+    font-size: 27px;
 }
 
 .sections .projects .container #card_1 .icon{
     background-image: url('/Resources/Icons/PasswordManager.png');
 }
 
-.sections .projects .container #card_1 .description{
-    margin-top: -100px
-}
-
-.sections .projects .container #card_2 .description span{
-    font-family: montserrat-regular;
-    font-size: 25px;
-}
-
 .sections .projects .container #card_2 .icon{
     background-image: url('/Resources/Icons/WorkoutManager.png');
-}
-
-.sections .projects .container #card_2 .description{
-    margin-top: -151px;
-}
-
-.sections .projects .container #card_3 .description span{
-    font-family: montserrat-regular;
-    font-size: 23px;
 }
 
 .sections .projects .container #card_3 .icon{
     background-image: url('/Resources/Icons/java.png');
 }
 
-.sections .projects .container #card_3 .description{
-    margin-top: -111px;
-}
-
-.sections .projects .container #card_4 .description span{
-    font-family: montserrat-regular;
-    font-size: 30px;
-}
-
 .sections .projects .container #card_4 .icon{
     background-image: url('/Resources/Icons/python.png');
-}
-
-.sections .projects .container #card_4 .description{
-    margin-top: -146px
-}
-
-.sections .projects .container #card_5 .description span{
-    font-family: montserrat-regular;
-    font-size: 30px;
 }
 
 .sections .projects .container #card_5 .icon{
     background-image: url('/Resources/Icons/cyberpunk.png');
 }
 
-.sections .projects .container #card_5 .description{
-    margin-top: -146px
-}
-
-.sections .projects .container #card_6 .description span{
-    font-family: montserrat-regular;
-    font-size: 30px;
-}
-
-.sections .projects .container #card_6 .description a{
-    font-family: montserrat-regular;
-    font-size: 30px;
-    color: black;
-}
-
 .sections .projects .container #card_6 .icon{
     background-image: url('/Resources/Icons/c-.png');
-}
-
-.sections .projects .container #card_6 .description{
-    margin-top: -186px;
-}
-
-.sections .projects .container #card_7 .description span{
-    font-family: montserrat-regular;
-    font-size: 27px;
 }
 
 .sections .projects .container #card_7 .icon{
     background-image: url('/Resources/Icons/power-play.png');
 }
 
-.sections .projects .container #card_7 .description{
-    margin-top: -161px
-}
-
-.sections .projects .container #card_8 .description span{
-    font-family: montserrat-regular;
-    font-size: 27px;
-}
-
 .sections .projects .container #card_8 .icon{
     background-image: url('/Resources/Icons/freight-frenzy.png');
-}
-
-.sections .projects .container #card_8 .description{
-    margin-top: -161px
 }
 
 /* RESPONSIVE */
@@ -455,9 +425,15 @@ span{
 }
 
 @media screen and (max-width: 900px){
-    body{
-        display: none;
+    .sections .projects .container .card .icon{
+        width: 20vw;
+        height: 20vw;
     }
+
+    .sections .projects .container .card .title span{
+        font-size: 9vw;
+    }  
+
     .sections .projects .container #card_1 .description span{
         font-size: 28px;
     }
@@ -476,7 +452,6 @@ span{
 }
 
 @media screen and (max-width: 800px){
-    
     .header .navigation-bar div span{
         line-height: 115px; 
         font-size: 32px;
