@@ -6,11 +6,13 @@ window.addEventListener('load', function () {
 let divName;
 let spanName;
 let fullName;
+let projectsSection
 
 function init(){
     divName = document.getElementById("name");
     spanName = divName.getElementsByTagName("span")[0];   
     fullName = spanName.textContent;
+    projectsSection = document.getElementById("projects");
 }
 
 //deleting and rewriting the name from the header
@@ -53,4 +55,8 @@ function navigateTo(url,newTab){
     else
         window.open(url, "_blank");
 }
-
+  
+  window.addEventListener("scroll", function () {
+    var y = window.scrollY;
+    
+});
