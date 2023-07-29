@@ -107,6 +107,7 @@ span{
     position: relative;
     transform: translateY(5px);
     transition: transform 0.3s ease-in-out 0s;
+    animation: left_to_right 0.7s;
 }
 
 .sections .projects .container .card .header{
@@ -313,17 +314,14 @@ span{
         line-height: 115px; 
         font-size: 40px;
     }
-    .header .navigation-bar div:hover{
-        transform: translateY(-1px);
-        transition: transform 0.2s ease-in-out 0s;
-        background-color: #978b6e;
-    }
+    
     .header .text #name span{
         font-size: 80px;
     }
 
     .sections .projects #title{
         padding: 20px;
+        margin-bottom: 50px;
     }
     
     .sections .projects #title span{
@@ -503,23 +501,43 @@ span{
 }
 
 /* ANIMATIONS */
-.header .navigation-bar div:hover{
-    transform: translateY(-5px);
-    transition: transform 0.2s;
-    background-color: #978b6e;
+@media (hover : none) {
+    .header .navigation-bar div:hover{
+        transition: transform 0.2s;
+        background-color: #978b6e;
+    }
+    
+    .sections .projects .container .card:hover{
+        transition: transform 0.2s ease-in-out 0s;
+    }
+    
+    .sections .projects .container .card .source:hover span{
+        transition: 0.2s;
+        background-color: #807558;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
 }
 
-.sections .projects .container .card:hover{
-    transform: translateY(-5px);
-    transition: transform 0.2s ease-in-out 0s;
-}
-
-.sections .projects .container .card .source:hover span{
-    padding-left: 25px;
-    transition: 0.2s;
-    background-color: #807558;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+@media (hover : hover) {
+    .header .navigation-bar div:hover{
+        transform: translateY(-5px);
+        transition: transform 0.2s;
+        background-color: #978b6e;
+    }
+    
+    .sections .projects .container .card:hover{
+        transform: translateY(-5px);
+        transition: transform 0.2s ease-in-out 0s;
+    }
+    
+    .sections .projects .container .card .source:hover span{
+        padding-left: 25px;
+        transition: 0.2s;
+        background-color: #807558;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
 }
 
 @keyframes opacity_increase {
