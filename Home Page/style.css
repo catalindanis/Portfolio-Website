@@ -334,97 +334,9 @@ span{
     
     .sections .projects .container .card{
         width: 80vw;
-        height: 900px;
+        height: 1200px;
     }
 
-    .sections .projects .container .card .icon{
-        width: 235px;
-        height: 235px;
-    }
-
-    .sections .projects .container .card .title span{
-        font-size: 5.6em;
-    }  
-
-    .sections .projects .container #card_1 .description span{
-        font-size: 1.87em;
-    }
-
-    .sections .projects .container #card_1 .description{
-        margin-top: -206px
-    }
-
-    .sections .projects .container #card_2 .description span{
-        font-size: 35px;
-    }
-
-    .sections .projects .container #card_2 .description{
-        margin-top: -255px
-    }
-
-    .sections .projects .container #card_3 .description span{
-        font-size: 2.18em;
-    }
-
-    .sections .projects .container #card_3 .description{
-        margin-top: -220px
-    }
-
-    .sections .projects .container #card_4 .description span{
-        font-size: 45px;
-    }
-
-    .sections .projects .container #card_4 .description{
-        margin-top: -235px
-    }
-
-    .sections .projects .container #card_5 .description span{
-        font-size: 45px;
-    }
-
-    .sections .projects .container #card_5 .description{
-        margin-top: -302px
-    }
-
-    .sections .projects .container #card_6 .description span{
-        font-size: 45px;
-    }
-
-    .sections .projects .container #card_6 .description a{
-        font-size: 45px;
-    }
-
-    .sections .projects .container #card_6 .description{
-        margin-top: -282px
-    }
-
-    .sections .projects .container #card_7 .description span{
-        font-size: 40px;
-    }
-
-    .sections .projects .container #card_7 .description{
-        margin-top: -260px
-    }
-
-    .sections .projects .container #card_8 .description span{
-        font-size: 40px;
-    }
-
-    .sections .projects .container #card_8 .description{
-        margin-top: -260px
-    }
-
-    .sections .projects .container .card .source{
-        height: 200px;
-    }
-    
-    .sections .projects .container .card .source span{
-        font-size: 35px;
-    }
-
-}
-
-@media screen and (max-width: 900px){
     .sections .projects .container .card .icon{
         width: 20vw;
         height: 20vw;
@@ -434,20 +346,59 @@ span{
         font-size: 9vw;
     }  
 
+    .sections .projects .container .card .description{
+        margin-top: 30px;
+    }
+
     .sections .projects .container #card_1 .description span{
-        font-size: 28px;
+        font-size: 2.6em;   
     }
-
-    .sections .projects .container #card_1 .description{
-        margin-top: -225px
+    
+    .sections .projects .container #card_2 .description span{
+        font-size: 3em; 
     }
-
+    
     .sections .projects .container #card_3 .description span{
-        font-size: 33px;
+        font-size: 2.95em;
+    }
+    
+    .sections .projects .container #card_4 .description span{
+        font-size: 3.7em;
+    }
+    
+    .sections .projects .container #card_5 .description span{
+        font-size: 3.7em;
+    }
+    
+    .sections .projects .container #card_6 .description span{ 
+        font-size: 3.7em;
+    }
+    
+    .sections .projects .container #card_6 .description a{
+        font-size: 3.7em;
+        color: black;
+    }
+    
+    .sections .projects .container #card_7 .description span{  
+        font-size: 3em;
+    }
+    
+    .sections .projects .container #card_8 .description span{
+        font-size: 3em;
     }
 
-    .sections .projects .container #card_3 .description{
-        margin-top: -202px
+    .sections .projects .container .card .source{
+        height: 200px;
+    }
+    
+    .sections .projects .container .card .source span{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sections .projects .container #card_1 .description span{
+        font-size: 2.38em;   
     }
 }
 
@@ -456,8 +407,98 @@ span{
         line-height: 115px; 
         font-size: 32px;
     }
+
     .header .text #name span{
         font-size: 60px;
+    }
+
+    .sections .projects .container #card_1 .description span{
+        font-size: 2.2em;   
+    }
+
+    .sections .projects .container #card_2 .description span{
+        font-size: 2.6em; 
+    }
+    
+    .sections .projects .container #card_3 .description span{
+        font-size: 2.55em;
+    }
+    
+    .sections .projects .container #card_4 .description span{
+        font-size: 3.3em;
+    }
+    
+    .sections .projects .container #card_5 .description span{
+        font-size: 3.3em;
+    }
+    
+    .sections .projects .container #card_6 .description span{ 
+        font-size: 3.3em;
+    }
+    
+    .sections .projects .container #card_6 .description a{
+        font-size: 3.3em;
+        color: black;
+    }
+    
+    .sections .projects .container #card_7 .description span{  
+        font-size: 2.6em;
+    }
+    
+    .sections .projects .container #card_8 .description span{
+        font-size: 2.6em;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .header .navigation-bar div span{
+        line-height: 115px; 
+        font-size: 32px;
+    }
+
+    .header .text #name span{
+        font-size: 60px;
+    }
+
+    .sections .projects .container .card .icon{
+        height: 19vw;
+    }
+
+    .sections .projects .container #card_1 .description span{
+        font-size: 1.9em;   
+    }
+
+    .sections .projects .container #card_2 .description span{
+        font-size: 2.3em; 
+    }
+    
+    .sections .projects .container #card_3 .description span{
+        font-size: 2.25em;
+    }
+    
+    .sections .projects .container #card_4 .description span{
+        font-size: 3em;
+    }
+    
+    .sections .projects .container #card_5 .description span{
+        font-size: 3em;
+    }
+    
+    .sections .projects .container #card_6 .description span{ 
+        font-size: 3em;
+    }
+    
+    .sections .projects .container #card_6 .description a{
+        font-size: 3em;
+        color: black;
+    }
+    
+    .sections .projects .container #card_7 .description span{  
+        font-size: 2.3em;
+    }
+    
+    .sections .projects .container #card_8 .description span{
+        font-size: 2.3em;
     }
 }
 
