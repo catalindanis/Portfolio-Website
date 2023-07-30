@@ -68,14 +68,46 @@ span{
 }
 
 .header .mini-navigation-bar{
+    display: flex;
     position: fixed;
+    align-items: center;
     top: 0px;
     left: 50%;
     transform: translate(-50%, 0);
     height: 75px;
     width: 600px;
-    background-color: #A29676;
+    background-color: #31373D;
     border-radius: 25px;
+    z-index: 999;
+    margin-top: 10px;
+}
+
+.header .mini-navigation-bar div{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    vertical-align: middle;
+    background-size: contain;
+    transform: translateY(0px);
+    transition: transform 0.5s;
+}
+
+.header .mini-navigation-bar .projects{
+    background-image: url(/Resources/Icons/coding.png);
+}
+
+.header .mini-navigation-bar .education{
+    background-image: url(/Resources/Icons/graduation-cap.png);
+}
+
+.header .mini-navigation-bar .experience{
+    background-image: url(/Resources/Icons/briefcase.png);
+}
+
+.header .mini-navigation-bar .contact{
+    background-image: url(/Resources/Icons/email.png);
 }
 
 .sections{
@@ -533,6 +565,11 @@ span{
         transition: transform 0.2s;
         background-color: #978b6e;
     }
+
+    .header .mini-navigation-bar div:hover{
+        transform: translateY(-5px);
+        transition: transform 0.2s ease-in-out 0s;
+    }
     
     .sections .projects .container .card:hover{
         transform: translateY(-5px);
@@ -563,6 +600,24 @@ span{
     }
     100% { 
         opacity: 1;
+    }
+}
+
+@keyframes opacity_decrease {
+    0% { 
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.7;
+    }
+    50% { 
+        opacity: 0.5;
+    }
+    75% { 
+        opacity: 0.3;
+    }
+    100% { 
+        opacity: 0.1;
     }
 }
 

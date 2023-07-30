@@ -1,18 +1,20 @@
 window.addEventListener('load', function () {
     init();
     this.window.setInterval(nameAnimate,100);
-    this.window.addEventListener("scroll", scrollListen);
+    this.window.setInterval(scrollListen, 0);
 });
 
 let divName;
 let spanName;
 let fullName;
+let miniNavBar;
 let projectsSection
 
 function init(){
     divName = document.getElementById("name");
     spanName = divName.getElementsByTagName("span")[0];   
     fullName = spanName.textContent;
+    miniNavBar = document.getElementById("mini-navigation-bar");
     projectsSection = document.getElementById("projects");
 }
 
@@ -59,8 +61,20 @@ function navigateTo(url,newTab){
 
 function scrollListen(){
     var scrollY = window.scrollY;
+
     if(scrollY >= 200){
         projectsSection.style.animation = "opacity_increase 0.6s";
         projectsSection.style.opacity = "1";
+    }
+
+    if(scrollY > 490){
+        miniNavBar.style.display = "flex";
+        miniNavBar.style.animation = "opacity_increase 0.3s";   
+    }
+    else if(scrollY < 490){ 
+        miniNavBar.style.animation = "opacity_decrease 0.3s";
+        this.window.setTimeout(() => {
+            miniNavBar.style.display = "none";
+        }, 300);
     }
 }
