@@ -354,6 +354,18 @@ span{
         line-height: 115px; 
         font-size: 40px;
     }
+
+    .header .mini-navigation-bar{
+        width: 100vw;
+        height: 200px;
+        margin-top: 0px;
+       border-radius: 50px;
+    }
+
+    .header .mini-navigation-bar div{
+        width: 100px;
+        height: 100px;
+    }
     
     .header .text #name span{
         font-size: 80px;
