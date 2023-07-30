@@ -1,6 +1,7 @@
 window.addEventListener('load', function () {
     init();
     this.window.setInterval(nameAnimate,100);
+    this.window.addEventListener("scroll", scrollListen);
 });
 
 let divName;
@@ -55,8 +56,11 @@ function navigateTo(url,newTab){
     else
         window.open(url, "_blank");
 }
-  
-  window.addEventListener("scroll", function () {
-    var y = window.scrollY;
-    
-});
+
+function scrollListen(){
+    var scrollY = window.scrollY;
+    if(scrollY >= 200){
+        projectsSection.style.animation = "opacity_increase 0.6s";
+        projectsSection.style.opacity = "1";
+    }
+}

@@ -67,6 +67,17 @@ span{
     font-size: 20px;
 }
 
+.header .mini-navigation-bar{
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 75px;
+    width: 600px;
+    background-color: #A29676;
+    border-radius: 25px;
+}
+
 .sections{
     margin: -10px;
 }
@@ -141,6 +152,11 @@ span{
     margin-left: 10px;
     margin-right: 10px;
     height: 350px;
+    margin-top: 10px;
+}
+
+.sections .projects .container .card .description a{
+    color: black;
 }
 
 .sections .projects .container .card .source{
@@ -162,10 +178,6 @@ span{
     vertical-align:middle;
     font-family: league-spartan;
     font-size: 20px;
-}
-
-.sections .projects .container .card .description{
-    margin-top: 10px;
 }
 
 .sections .projects .container .card .description span,
@@ -193,13 +205,9 @@ span{
     font-size: 30px;
 }
 
-.sections .projects .container #card_6 .description span{ 
+.sections .projects .container #card_6 .description span,
+.sections .projects .container #card_6 .description a{ 
     font-size: 30px;
-}
-
-.sections .projects .container #card_6 .description a{
-    font-size: 30px;
-    color: black;
 }
 
 .sections .projects .container #card_7 .description span{  
