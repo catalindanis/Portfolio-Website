@@ -121,7 +121,7 @@ span{
     margin-top: 100px;
 }
 
-.sections .projects #title{
+.sections .sectionTitle{
     text-align: center;
     animation: left_to_right 0.7s;
     background-color: #31373D;
@@ -129,7 +129,7 @@ span{
     padding: 10px;
 }
 
-.sections .projects #title span{
+.sections .sectionTitle span{
     font-size: 55px;
     color: #EBEAE6; 
     font-family: montserrat-regular;
@@ -371,12 +371,12 @@ span{
         font-size: 80px;
     }
 
-    .sections .projects #title{
+    .sections .sectionTitle{
         padding: 20px;
         margin-bottom: 50px;
     }
     
-    .sections .projects #title span{
+    .sections .sectionTitle span{
         font-size: 85px;
         color: #EBEAE6; 
         font-family: montserrat-regular;
@@ -553,18 +553,27 @@ span{
 }
 
 /* ANIMATIONS */
-@media (hover : none) {
-    .header .navigation-bar div:hover{
-        transition: transform 0.2s;
+@media (hover : none ) {
+    
+    .header .navigation-bar div:active{
+        transform: translateY(-5px);
+        transition: transform 0.5s;
         background-color: #978b6e;
     }
-    
-    .sections .projects .container .card:hover{
-        transition: transform 0.2s ease-in-out 0s;
+
+    .header .mini-navigation-bar div:active{
+        transform: translateY(-5px);
+        transition: transform 0.5s ease-in-out 0s;
     }
     
-    .sections .projects .container .card .source:hover span{
-        transition: 0.2s;
+    .sections .projects .container .card:active{
+        transform: translateY(-5px);
+        transition: transform 0.5s ease-in-out 0s;
+    }
+    
+    .sections .projects .container .card .source:active span{
+        padding-left: 25px;
+        transition: 0.5s;
         background-color: #807558;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;

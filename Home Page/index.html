@@ -7,7 +7,7 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="header">
         <div class="text">
             <div id="name">
                 <span>public class Danis Catalin &#123</span>
@@ -17,7 +17,7 @@
             <div onClick="document.getElementById('projects').scrollIntoView();">
                 <span>Projects</span>
             </div>
-            <div>
+            <div onClick="document.getElementById('experience').scrollIntoView();">
                 <span>Experience</span>
             </div>
             <div>
@@ -29,14 +29,14 @@
         </div>
         <div class="mini-navigation-bar" id="mini-navigation-bar" style="display: none";>
             <div class="projects" onClick="document.getElementById('projects').scrollIntoView();"></div>
-            <div class="education"></div>
+            <div class="education" onClick="document.getElementById('experience').scrollIntoView();"></div>
             <div class="experience"></div>
             <div class="contact"></div>
         </div>
     </div>
     <div class="sections">
         <div class="projects" id="projects" style="opacity: 0.1">
-              <div id="title">
+              <div class="sectionTitle" id="titleProjects">
                 <span>Projects</span>
               </div>
               <div class="container">
@@ -174,8 +174,10 @@
 
               </div>
         </div>
-        <div class="experience">
-            experience
+        <div class="experience" id="experience" style="opacity: 0.1">
+            <div class="sectionTitle" id="titleExperience">
+                <span>Experience</span>
+            </div>
         </div>
         <div class="education">
             education
