@@ -59,6 +59,7 @@ function navigateTo(url,newTab){
         window.open(url, "_blank");
 }
 
+var lastScrollY = 0;
 function scrollListen(){
     var scrollY = window.scrollY;
 
@@ -67,14 +68,16 @@ function scrollListen(){
         projectsSection.style.opacity = "1";
     }
 
-    if(scrollY > 490){
+    if(scrollY > 490 && scrollY < lastScrollY){
         miniNavBar.style.display = "flex";
         miniNavBar.style.animation = "opacity_increase 0.3s";   
     }
-    else if(scrollY < 490){ 
+    else if(scrollY < 490 || scrollY > lastScrollY){ 
         miniNavBar.style.animation = "opacity_decrease 0.3s";
         this.window.setTimeout(() => {
             miniNavBar.style.display = "none";
         }, 300);
     }
+
+    lastScrollY = scrollY;
 }

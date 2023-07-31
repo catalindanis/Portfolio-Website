@@ -357,9 +357,9 @@ span{
 
     .header .mini-navigation-bar{
         width: 100vw;
-        height: 200px;
+        height: 150px;
         margin-top: 0px;
-       border-radius: 50px;
+        border-radius: 50px;
     }
 
     .header .mini-navigation-bar div{
