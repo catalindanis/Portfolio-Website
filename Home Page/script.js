@@ -2,13 +2,17 @@ window.addEventListener('load', function () {
     init();
     this.window.setInterval(nameAnimate,100);
     this.window.setInterval(scrollListen, 0);
+    this.window.addEventListener("resize", function() {
+        projectsY = document.getElementById("titleProjects").clientHeight + document.getElementById("header").clientHeight
+    });
 });
 
 let divName;
 let spanName;
 let fullName;
 let miniNavBar;
-let projectsSection
+let projectsSection, experienceSection;
+var projectsY, experienceY;
 
 function init(){
     divName = document.getElementById("name");
@@ -16,6 +20,8 @@ function init(){
     fullName = spanName.textContent;
     miniNavBar = document.getElementById("mini-navigation-bar");
     projectsSection = document.getElementById("projects");
+    experienceSection = document.getElementById("experience");
+    projectsY = document.getElementById("titleProjects").clientHeight + document.getElementById("header").clientHeight
 }
 
 //deleting and rewriting the name from the header
@@ -52,7 +58,6 @@ function nameAnimate(){
 }
 
 function navigateTo(url,newTab){
-    console.log(newTab);
     if(!newTab)
         window.location.href=url;
     else
@@ -63,16 +68,16 @@ var lastScrollY = 0;
 function scrollListen(){
     var scrollY = window.scrollY;
 
-    if(scrollY >= 200){
+    if(scrollY >= projectsY){
         projectsSection.style.animation = "opacity_increase 0.6s";
         projectsSection.style.opacity = "1";
     }
 
-    if(scrollY > 490 && scrollY < lastScrollY){
+    if(scrollY > projectsY && scrollY < lastScrollY){
         miniNavBar.style.display = "flex";
         miniNavBar.style.animation = "opacity_increase 0.3s";   
     }
-    else if(scrollY < 490 || scrollY > lastScrollY){ 
+    else if(scrollY < projectsY || scrollY > lastScrollY){ 
         miniNavBar.style.animation = "opacity_decrease 0.3s";
         this.window.setTimeout(() => {
             miniNavBar.style.display = "none";
