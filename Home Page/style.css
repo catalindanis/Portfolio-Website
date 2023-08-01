@@ -114,10 +114,7 @@ span{
     margin: -10px;
 }
 
-.sections .projects,
-.sections .experience,
-.sections .education,
-.sections .contact{
+.sections .projects{
     margin-top: 100px;
 }
 
@@ -282,6 +279,14 @@ span{
     background-image: url('/Resources/Icons/freight-frenzy.png');
 }
 
+.sections .experience{
+    margin-top: 50px;
+}
+
+.sections .experience .sectionTitle{
+    margin-bottom: 60px;
+}
+
 .sections .experience .container{
     display: flex;
     flex-wrap: wrap;
@@ -361,7 +366,7 @@ span{
     background-color: #A64E47;
     animation: rainbow-bg 2.5s linear;
 	animation-iteration-count: infinite;
-    border: 2px solid #66514A;
+    border: 3px solid #66514A;
 }
 
 /* RESPONSIVE */
