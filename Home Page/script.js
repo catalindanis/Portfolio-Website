@@ -3,7 +3,8 @@ window.addEventListener('load', function () {
     this.window.setInterval(nameAnimate,100);
     this.window.setInterval(scrollListen, 0);
     this.window.addEventListener("resize", function() {
-        projectsY = document.getElementById("titleProjects").clientHeight + document.getElementById("header").clientHeight
+        projectsY = document.getElementById("header").clientHeight + document.getElementById("titleProjects").clientHeight;
+        experienceY = document.getElementById("header").clientHeight + document.getElementById("projects").clientHeight + document.getElementById("titleExperience");
     });
 });
 
@@ -71,6 +72,11 @@ function scrollListen(){
     if(scrollY >= projectsY){
         projectsSection.style.animation = "opacity_increase 0.6s";
         projectsSection.style.opacity = "1";
+    }
+
+    if(scrollY >= experienceY){
+        experienceSection.style.animation = "opacity_increase 0.6s";
+        experienceSection.style.opacity = "1";
     }
 
     if(scrollY > projectsY && scrollY < lastScrollY){

@@ -282,6 +282,88 @@ span{
     background-image: url('/Resources/Icons/freight-frenzy.png');
 }
 
+.sections .experience .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sections .experience .container .card{
+    background-color: #A64E47;
+    border-radius: 25px;
+    width: 48vw;
+    height: 560px;
+    position: relative;
+    transition: transform 0.3s ease-in-out 0s;
+    animation: left_to_right 0.7s;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 5px solid #66514A;
+}
+
+.sections .experience .container .card .title{
+    font-family: montserrat-regular;
+    font-size: 65px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sections .experience .container .card .subtitle{
+    font-family: montserrat-regular;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.sections .experience .container .card .period{
+    font-family: montserrat-regular;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.sections .experience .container .card .description{
+    font-family:  open-sans;
+    font-size: 1.83em;
+    margin-top: 30px;;
+    margin-left: 10px;
+}
+
+.sections .experience .container .big-card{
+    background-color: #A64E47;
+    border-radius: 25px;
+    width: 97vw;
+    height: 600px;
+    position: relative;
+    transition: transform 0.3s ease-in-out 0s;
+    animation: left_to_right 0.7s;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 75px;
+    border: 5px solid #66514A;
+}
+
+.sections .experience .container .big-card .title{
+    font-family: montserrat-regular;
+    font-size: 65px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.rectangle{
+    position: absolute;
+    bottom: -200px;
+    z-index: -1;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 250px;
+    background-color: #A64E47;
+    animation: rainbow-bg 2.5s linear;
+	animation-iteration-count: infinite;
+    border: 2px solid #66514A;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1600px){
     .header .navigation-bar div{
@@ -645,6 +727,27 @@ span{
 @keyframes left_to_right {
     0% { 
         transform: translateX(-100px);  
+    }
+}
+
+@keyframes rainbow-bg{
+    100%,0%{
+        background-color: #A64E47;
+    }
+    25%{
+        background-color: #94433e;
+    }
+    50%{
+        background-color: #773532;
+    }
+    75%{
+        background-color: #5c2927;
+    }
+    83%{
+        background-color: #773532;
+    }
+    91%{
+        background-color: #94433e;
     }
 }
 
